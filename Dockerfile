@@ -7,6 +7,8 @@ RUN npm install -g jshint
 RUN npm install -g nodemon
 RUN npm install -g pm2
 
+# Add the bundle into the html directory.
+
 ADD binaries/node.tar.gz /var/www/html
 
 WORKDIR /var/www/html
